@@ -13,8 +13,8 @@ const lessons = [
   },
   {
     id: "lesson-3",
-    title: "Lesson 3: Multiplication by 11",
-    desc: "Learn fast multiplication using simple visual patterns.",
+    title: "Lesson 3: Fast Addition & Subtraction Using Complements",
+    desc: "Learn fast Addition & Subtraction Using Complements.",
   },
 ];
 
