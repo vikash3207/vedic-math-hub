@@ -3,7 +3,7 @@ title: "Lesson 3: Multiplication by 11"
 intro: "Multiply any number by 11 using a simple visual trick."
 ---
 
-## The Rule
+## The Rule - This is going to Change 
 Take the first and last digit as they are.  
 Add the middle digits.
 
