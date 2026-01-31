@@ -8,7 +8,7 @@ const lessons = [
   },
   {
     id: "lesson-2",
-    title: "Lesson 2: Number Sense Basics",
+    title: "Lesson 2: Understanding Bases & Complements",
     desc: "Build a strong mental foundation before shortcuts.",
   },
   {

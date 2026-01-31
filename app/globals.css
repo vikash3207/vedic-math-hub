@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #ffffff;
@@ -24,3 +25,92 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Lesson rendering enhancements (no HTML required inside .md) */
+.lesson-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lesson-section {
+  --lesson-accent: #4f46e5;
+  position: relative;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.45); /* slate-400-ish */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(248, 250, 252, 1));
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  padding: 1.5rem;
+}
+
+.lesson-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: var(--lesson-accent);
+}
+
+.lesson-accent-0 {
+  --lesson-accent: #4f46e5; /* indigo */
+}
+.lesson-accent-1 {
+  --lesson-accent: #0ea5e9; /* sky */
+}
+.lesson-accent-2 {
+  --lesson-accent: #f59e0b; /* amber */
+}
+.lesson-accent-3 {
+  --lesson-accent: #10b981; /* emerald */
+}
+.lesson-accent-4 {
+  --lesson-accent: #a855f7; /* purple */
+}
+.lesson-accent-5 {
+  --lesson-accent: #f43f5e; /* rose */
+}
+
+/* Typography tweaks inside lesson cards */
+.lesson-prose .lesson-section :is(h2, h3) {
+  color: rgba(15, 23, 42, 0.95);
+}
+
+.lesson-prose .lesson-section blockquote {
+  border-left: 4px solid var(--lesson-accent);
+  background: rgba(2, 6, 23, 0.03);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.lesson-prose .lesson-section blockquote p {
+  margin: 0;
+}
+
+.lesson-prose .lesson-section table {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+.lesson-prose .lesson-section thead {
+  background: rgba(2, 6, 23, 0.03);
+}
+
+.lesson-prose .lesson-section th,
+.lesson-prose .lesson-section td {
+  padding: 0.75rem 1rem;
+}
+
+.lesson-prose .lesson-section tbody tr:nth-child(even) {
+  background: rgba(2, 6, 23, 0.02);
+}
+
+.lesson-prose .lesson-section hr {
+  display: none;
+}
+
