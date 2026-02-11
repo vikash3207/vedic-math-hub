@@ -167,4 +167,4 @@ Answer: 305
 ---
 
 ## Next Lesson
-Lesson 4: Lesson 4: Fast Multiplication Techniques - Part 1
+Lesson 4: Fast Multiplication Techniques - Part 1
