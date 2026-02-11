@@ -167,4 +167,4 @@ Answer: 305
 ---
 
 ## Next Lesson
-Lesson 4: Multiplication by 11 (Vedic Maths Method)
+Lesson 4: Lesson 4: Fast Multiplication Techniques - Part 1
